@@ -1,0 +1,7 @@
+data/
+dataset-nb/
+
+scratch-nb/
+
+.env
+.ipynb_checkpints/
