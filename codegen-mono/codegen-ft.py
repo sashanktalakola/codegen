@@ -1,3 +1,5 @@
+# Uncomment if CUDA devices error pops up on ML Server
+# RuntimeError: Number of CUDA devices on the machine is larger than the compiled max number of gpus expected (16). Increase that and recompile.
 import os
 
 DEVICES = ",".join(map(str, range(17, 32)))

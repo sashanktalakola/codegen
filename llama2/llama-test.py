@@ -1,7 +1,9 @@
-import os
+# Uncomment if CUDA devices error pops up on ML Server
+# RuntimeError: Number of CUDA devices on the machine is larger than the compiled max number of gpus expected (16). Increase that and recompile.
+# import os
 
-DEVICES = ",".join(map(str, range(17, 32)))
-os.environ["CUDA_VISIBLE_DEVICES"] = DEVICES
+# DEVICES = ",".join(map(str, range(17, 32)))
+# os.environ["CUDA_VISIBLE_DEVICES"] = DEVICES
 
 import torch
 from transformers import (

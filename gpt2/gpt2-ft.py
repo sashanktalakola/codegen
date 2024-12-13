@@ -1,3 +1,5 @@
+# Uncomment if CUDA devices error pops up on ML Server
+# RuntimeError: Number of CUDA devices on the machine is larger than the compiled max number of gpus expected (16). Increase that and recompile.
 import os
 
 DEVICES = ",".join(map(str, range(17, 32)))
@@ -19,7 +21,7 @@ from trl import SFTTrainer
 from datasets import load_dataset
 
 
- model_name = "openai-community/gpt2"
+model_name = "openai-community/gpt2"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 tokenizer.pad_token = tokenizer.eos_token
 
